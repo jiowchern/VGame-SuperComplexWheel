@@ -6,6 +6,7 @@ using Regulus.Remoting;
 using Regulus.Utility;
 
 
+using VGame.Project.SuperComplexWheel.Common;
 using VGame.Project.SuperComplexWheel.Game;
 using VGame.Project.SuperComplexWheel.Game.Formula;
 
@@ -19,8 +20,23 @@ namespace VGame.Project.SuperComplexWheel.Formula
         public Server()
         {
             _Updater = new Updater();
-            _Core = new Core(new DummyStorage() );
+
+            var service = _LoadWheelServiceFromExtend();            
+            _Core = new Core(new DummyStorage() , service);
         }
+
+        private IWheelService _LoadWheelServiceFromExtend()
+        {
+            try
+            {
+                return new ExtendWheelService();
+            }
+            catch(Exception e)
+            {
+                return new WheelService();                
+            }
+        }
+
         void IBootable.Launch()
         {
             _Updater.Add(_Core);

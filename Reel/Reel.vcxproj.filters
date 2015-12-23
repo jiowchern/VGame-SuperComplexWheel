@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="原始程式檔">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{a0ef4f49-323a-4043-b8df-cc6c76f1629d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Native">
+      <UniqueIdentifier>{f0073f45-acfc-43ba-8751-17f096d5a25a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demper">
+      <UniqueIdentifier>{519d0cbc-d7db-45eb-a6ef-8002de2bd4f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Wheel.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="Native\Slave.cpp">
+      <Filter>Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Native\WheelImplement.cpp">
+      <Filter>Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Native\AdjustValue.cpp">
+      <Filter>Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Native\Scroll.cpp">
+      <Filter>Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Native\Reel.cpp">
+      <Filter>Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\rand.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="Native\GameCheck.cpp">
+      <Filter>Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Native\Chance.cpp">
+      <Filter>Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Native\WupChance.cpp">
+      <Filter>Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\buffer.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Native\Record.cpp">
+      <Filter>Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Native\GameAssign.cpp">
+      <Filter>Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\rtc3021.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Native\Master.cpp">
+      <Filter>Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\memory.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Native\Credit.cpp">
+      <Filter>Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Output.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="WheelDumper.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Wheel.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\chance.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\gameassign.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\gamecheck.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\reel.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\scroll.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\wupchance.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\common.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\buffer.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\rand.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\adjustvalue.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\flashrom.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\game.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\key.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\io.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\lamp.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\meter.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\password.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\slave.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\g1_define.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\memory.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\macro.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\recsys.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\master.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\Slave.h">
+      <Filter>Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\record.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\WheelImplement.h">
+      <Filter>Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\AdjustValue.h">
+      <Filter>Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\Scroll.h">
+      <Filter>Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\Reel.h">
+      <Filter>Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\credit.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\GameCheck.h">
+      <Filter>Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\Chance.h">
+      <Filter>Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\WupChance.h">
+      <Filter>Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\Record.h">
+      <Filter>Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\GameAssign.h">
+      <Filter>Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\rtc3021.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\Master.h">
+      <Filter>Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\Credit.h">
+      <Filter>Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Output.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="WheelDumper.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Reel.rc">
+      <Filter>資源檔</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

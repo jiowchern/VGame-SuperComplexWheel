@@ -13,14 +13,14 @@ namespace VGame.Project.SuperComplexWheel.Game.Formula
     {
         private readonly ISoulBinder _SoulBinder;
 
-        private WheelService _WheelService;
+        private readonly IWheelService _WheelService;
 
         public event Action DoneEvent;
 
-        public ServiceStage(ISoulBinder soul_binder)
+        public ServiceStage(ISoulBinder soul_binder , IWheelService wheel_service)
         {
             _SoulBinder = soul_binder;
-            _WheelService = new WheelService();
+            _WheelService = wheel_service;
         }
 
         void IStage.Enter()

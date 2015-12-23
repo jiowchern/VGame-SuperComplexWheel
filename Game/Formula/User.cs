@@ -20,12 +20,15 @@ namespace VGame.Project.SuperComplexWheel.Game.Formula
 
         private readonly IAccountFinder _AccountFinder;
 
+        private readonly IWheelService _WheelService;
+
         private readonly Regulus.Utility.StageMachine _Machine;
 
-        public User(ISoulBinder soul_binder,IAccountFinder account_finder)
+        public User(ISoulBinder soul_binder,IAccountFinder account_finder , IWheelService wheel_service)
         {
             _SoulBinder = soul_binder;
             _AccountFinder = account_finder;
+            _WheelService = wheel_service;
             _Machine = new StageMachine();
         }
 
@@ -44,7 +47,7 @@ namespace VGame.Project.SuperComplexWheel.Game.Formula
 
         private void _ToFindWhell(Account account)
         {
-            var stage = new ServiceStage(_SoulBinder);
+            var stage = new ServiceStage(_SoulBinder , _WheelService);
             stage.DoneEvent += _ToVerify;
             _Machine.Push(stage);
         }

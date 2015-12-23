@@ -1,0 +1,56 @@
+#ifndef DEF_INCLUDE_LAMP_H
+	#define DEF_INCLUDE_LAMP_H
+
+	#ifdef DEF_LAMP_C
+		#define EXTERN
+	#else
+		#define EXTERN extern
+	#endif
+	
+	enum __LAMP__ {
+		
+		LAMP_PCI_KEY_PAYOUT ,
+		LAMP_PCI_PAYOUT_BOX ,
+		LAMP_PCI_NOUSE_02 ,
+		LAMP_PCI_COIN_A_POWER ,
+		LAMP_PCI_COIN_C_POWER ,
+		LAMP_PCI_WIN ,
+		LAMP_PCI_WINBIG ,
+		LAMP_PCI_ERROR ,
+		LAMP_PCI_KEY_START ,		
+		LAMP_PCI_KEY_STOP1 ,
+		LAMP_PCI_KEY_STOP2 ,
+		LAMP_PCI_KEY_STOP3 ,
+		LAMP_PCI_KEY_STOP4 ,
+		LAMP_PCI_KEY_AUTO , 
+		LAMP_PCI_KEY_MAXBET , 
+		LAMP_PCI_KEY_STOP5 ,
+		LAMP_PCI_KEY_HELP ,
+		LAMP_PCI_KEY_RES ,
+
+		LAMP_PCI_0 ,
+		LAMP_PCI_1 ,
+		LAMP_PCI_2 ,
+		LAMP_PCI_3 ,
+		LAMP_PCI_4 ,
+		LAMP_PCI_5 ,
+
+		DEF_LAMP_MAX
+	} ;
+	
+	#define LAMP_PCI_KEY_BIG  	LAMP_PCI_KEY_STOP1
+	#define LAMP_PCI_KEY_SALL	LAMP_PCI_KEY_STOP2
+	#define LAMP_PCI_KEY_HWUP 	LAMP_PCI_KEY_STOP3
+	#define LAMP_PCI_KEY_WUP 	LAMP_PCI_KEY_STOP4
+	#define LAMP_PCI_KEY_DWUP 	LAMP_PCI_KEY_STOP5	
+	#define LAMP_PCI_KEY_BET  	LAMP_PCI_KEY_STOP1
+	#define LAMP_PCI_KEY_TAKE 	LAMP_PCI_KEY_START
+
+	EXTERN void  vLamp_Initial( void ) ;
+	EXTERN void  vLamp_On( ULONG ulLamp ) ;
+	EXTERN void  vLamp_Off( ULONG ulLamp ) ;
+	EXTERN void  vLamp_AllOn( void ) ;
+	EXTERN void  vLamp_AllOff( void ) ;
+	
+	#undef EXTERN
+#endif
