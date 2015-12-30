@@ -77,7 +77,7 @@ namespace VGame
 			VGame::CLR::Output		Spin		(const VGame::CLR::Input& rule);
 			VGame::CLR::Output		SpinNormal	(const VGame::CLR::Input& rule);
 
-			void					Import		(const VGame::CLR::Dump::WheelFieldSet& set);
+			void					Import		(VGame::CLR::Dump::WheelFieldSet& set);
 			VGame::CLR::Dump::WheelFieldSet	Export();
 
 		};

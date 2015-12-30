@@ -48,8 +48,6 @@ namespace VGame
 				}
 			}
 
-			
-
 			// ¦x¼q
 			template<typename TTarget , int  TLength  , typename TSource = TTarget>
 			array<TTarget>^  _ArrayConver(const TSource input[TLength] , TTarget(*setter)(const TSource&) = _ArrayConverSetter)
@@ -85,8 +83,7 @@ namespace VGame
 			}
 
 			void SetBuffer(BUFFER& buffer , const VGame::CLR::Dump::Buffer% set)
-			{
-				
+			{				
 				buffer.slCount = set.slCount;
 				buffer.slValue = set.slValue;
 				buffer.ulLife = set.ulLife;				
@@ -94,8 +91,7 @@ namespace VGame
 			void DumpChance(MAINCHANCE_BUF&	out , const VGame::CLR::Dump::MainChanceBuf% stcChance)
 			{
 				CSArrayToArray<BUFFER , DEF_CHANCE_BUFMAX , VGame::CLR::Dump::Buffer >(out.Buffer , stcChance.Buffer , SetBuffer );
-				CSArrayToArray<ULONG, DEF_CHANCE_BUFMAX >(out.ulRate, stcChance.ulRate);
-				
+				CSArrayToArray<ULONG, DEF_CHANCE_BUFMAX >(out.ulRate, stcChance.ulRate);				
 				
 				out.ulBase = stcChance.ulBase;
 				out.ulMainRetakeTime = stcChance.ulMainRetakeTime;
@@ -113,8 +109,6 @@ namespace VGame
 
 				CSArrayToArray<SLONG, 8>(out.slVirtualBufTopValue, stcChance.slVirtualBufTopValue);
 				CSArrayToArray<ULONG, 8>(out.ulVirtualBufAsnGift, stcChance.ulVirtualBufAsnGift);
-
-				
 				
 				out.slReturnBufValue = stcChance.slReturnBufValue;
 				out.slReturnBetValue = stcChance.slReturnBetValue;

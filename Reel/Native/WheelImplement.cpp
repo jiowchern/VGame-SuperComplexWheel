@@ -417,8 +417,9 @@ VGame::CLR::Output VGame::Native::WheelImplement::SpinNormal(const VGame::CLR::I
 	
 	return _BuildResult();
 }
-void VGame::Native::WheelImplement::Import(const VGame::CLR::Dump::WheelFieldSet& set)
+void VGame::Native::WheelImplement::Import(VGame::CLR::Dump::WheelFieldSet& set)
 {
+	auto a = set.slFeverWin;
 	slFeverWin	= set.slFeverWin;
 	slFreeWin = set.slFreeWin;
 	ulPlayTimes = set.ulPlayTimes;
